@@ -47,6 +47,7 @@ void cargarLibros() {
 	libros[36][0] = "Python"; libros[36][1] = "Python para ciencia e ingenieria";
 	libros[37][0] = "Python"; libros[37][1] = "Python para principiantes";
 	libros[38][0] = "Python"; libros[38][1] = "Python para todos";
+    libros[39][0] = "cinematografia"; libros[39][1] = "la Historia del cine";
 }
 
 
@@ -66,7 +67,7 @@ int main(int argc, char const *argv[])
         cin >> buscar;
 
         // busqueda
-        for (int i = 0; i < 39; i++)
+        for (int i = 0; i < 40; i++)
         {
             string libro = libros[i][1];
             string libroEnminuscula = libro;
@@ -79,9 +80,9 @@ int main(int argc, char const *argv[])
 
                 cout << "Tambien te sugerimos estos libros: " << endl;
 
-                int sugerencia1 = rand() % 38 + 1;
-                int sugerencia2 = rand() % 38 + 1;
-                int sugerencia3 = rand() % 38 + 1;
+                int sugerencia1 = rand() % 39 + 1;
+                int sugerencia2 = rand() % 39 + 1;
+                int sugerencia3 = rand() % 39 + 1;
 
                 cout << " Sugerencia 1: " << libros[sugerencia1][1] << endl;
                 cout << " Sugerencia 2: " << libros[sugerencia2][1] << endl;
